@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
+import localFont from "next/font/local"
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Box, Container } from "@mui/material";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const inter = localFont({ src: "../../public/asset/fonts/Rezvan/Rezvan.ttf" });
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
