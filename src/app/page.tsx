@@ -1,4 +1,5 @@
 import Hero from "@/components/heroBox/Hero";
+import TapsiTabs from "@/components/tabs/Tabs";
 import { Box } from "@mui/material";
 
 
@@ -6,6 +7,7 @@ export default function Home() {
   return (
     <Box className="mt-[40px]">
      <Hero />
+     <TapsiTabs />
       <h1>سلام من , محمد قیاسی هستم</h1>
       <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatum odio blanditiis voluptate iure sequi! A veniam totam, perferendis est fugiat iste nulla commodi, velit minima dolore nisi assumenda eum.
         Tempore quibusdam consequatur hic vero repellendus dicta aliquid voluptatem porro, quos laboriosam optio odio, animi vitae ad nisi inventore asperiores rerum quas temporibus molestiae. Pariatur velit voluptatum itaque. Dolorum, eligendi!
