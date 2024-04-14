@@ -47,88 +47,88 @@ export default function TapsiTabs() {
             <Container>
                 <Typography variant='h4'>سرویس های تپسی</Typography>
                 <Box sx={{ width: '100%' }}>
-                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                            <Tab label={
-                                <Box className="">
-                                    <Image
-                                        alt="icon"
-                                        src={"/asset/images/cc-classic.png"}
-                                        width={100}
-                                        height={100}
-                                    />
-                                    lable
-                                </Box>
-                            } />
-                            <Tab label={
-                                <Box className="">
-                                    <Image
-                                        alt="icon"
-                                        src={"/asset/images/cc-tel.png"}
-                                        width={100}
-                                        height={100}
-                                    />
-                                    lable
-                                </Box>
-                            } />
-                            <Tab label={
-                                <Box className="">
-                                    <Image
-                                        alt="icon"
-                                        src={"/asset/images/cc-line.png"}
-                                        width={100}
-                                        height={100}
-                                    />
-                                    lable
-                                </Box>
-                            } />
-                            <Tab label={
-                                <Box className="">
-                                    <Image
-                                        alt="icon"
-                                        src={"/asset/images/cc-motopeyk.png"}
-                                        width={100}
-                                        height={100}
-                                    />
-                                    lable
-                                </Box>
-                            } />
-                            <Tab label={
-                                <Box className="">
-                                    <Image
-                                        alt="icon"
-                                        src={"/asset/images/cc-autopeyk.png"}
-                                        width={100}
-                                        height={100}
-                                    />
-                                    lable
-                                </Box>
-                            } />
-                            <Tab label={
-                                <Box className="">
-                                    <Image
-                                        alt="icon"
-                                        src={"/asset/images/cc-plus.png"}
-                                        width={100}
-                                        height={100}
-                                    />
-                                    lable
-                                </Box>
-                            } />
-                            <Tab label={
-                                <Box className="">
-                                    <Image
-                                        alt="icon"
-                                        src={"/asset/images/cc-hamyar.png"}
-                                        width={100}
-                                        height={100}
-                                    />
-                                    lable
-                                </Box>
-                            } />
-                        </Tabs>
+                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }} >
+                            <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                                <Tab  label={
+                                    <Box className="">
+                                        <Image
+                                            alt="icon"
+                                            src={"/asset/images/cc-classic.png"}
+                                            width={100}
+                                            height={100}
+                                        />
+                                        lable
+                                    </Box>
+                                } />
+                                <Tab label={
+                                    <Box className="">
+                                        <Image
+                                            alt="icon"
+                                            src={"/asset/images/cc-tel.png"}
+                                            width={100}
+                                            height={100}
+                                        />
+                                        lable
+                                    </Box>
+                                } />
+                                <Tab label={
+                                    <Box className="">
+                                        <Image
+                                            alt="icon"
+                                            src={"/asset/images/cc-line.png"}
+                                            width={100}
+                                            height={100}
+                                        />
+                                        lable
+                                    </Box>
+                                } />
+                                <Tab label={
+                                    <Box className="">
+                                        <Image
+                                            alt="icon"
+                                            src={"/asset/images/cc-motopeyk.png"}
+                                            width={100}
+                                            height={100}
+                                        />
+                                        lable
+                                    </Box>
+                                } />
+                                <Tab label={
+                                    <Box className="">
+                                        <Image
+                                            alt="icon"
+                                            src={"/asset/images/cc-autopeyk.png"}
+                                            width={100}
+                                            height={100}
+                                        />
+                                        lable
+                                    </Box>
+                                } />
+                                <Tab label={
+                                    <Box className="">
+                                        <Image
+                                            alt="icon"
+                                            src={"/asset/images/cc-plus.png"}
+                                            width={100}
+                                            height={100}
+                                        />
+                                        lable
+                                    </Box>
+                                } />
+                                <Tab label={
+                                    <Box className="">
+                                        <Image
+                                            alt="icon"
+                                            src={"/asset/images/cc-hamyar.png"}
+                                            width={100}
+                                            height={100}
+                                        />
+                                        lable
+                                    </Box>
+                                } />
+                            </Tabs>
 
-                    </Box>
+                        </Box>
                     <CustomTabPanel value={value} index={0}>
                         Item One
                     </CustomTabPanel>

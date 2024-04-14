@@ -77,7 +77,7 @@ const Hero = () => {
                     <Image
                         alt="phone"
                         src={'/asset/images/phone.png'} // Updated path
-                        fill
+                        fill={true}
                     />
                     jbjkj
                 </Box>
