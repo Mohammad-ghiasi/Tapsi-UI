@@ -14,7 +14,11 @@ const config: Config = {
       },
       colors: {
         'black-rgba': 'rgba(0, 0, 0, 0.40)',
+        "my-orange": "#ED6C02"
       },
+      boxShadow: {
+        'manual': '40px 50px 80px -20px rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   plugins: [],

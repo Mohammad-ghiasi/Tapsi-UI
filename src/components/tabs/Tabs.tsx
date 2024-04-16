@@ -1,4 +1,5 @@
 "use client"
+import "./span.css"
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -25,8 +26,8 @@ function CustomTabPanel(props: TabPanelProps) {
             {...other}
         >
             {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                <Box sx={{ paddingTop: 4 }}>
+                    {children}
                 </Box>
             )}
         </div>
@@ -38,97 +39,112 @@ function CustomTabPanel(props: TabPanelProps) {
 export default function TapsiTabs() {
     const [value, setValue] = React.useState(0);
 
+
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };
 
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setValue((prevValue) => (prevValue + 1) % 7);
+        }, 5000); // Change tab every 3 seconds
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <>
             <Container>
                 <Typography variant='h4'>سرویس های تپسی</Typography>
-                <Box sx={{ width: '100%' }}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }} >
-                            <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                                <Tab  label={
-                                    <Box className="">
+                <Box sx={{ width: '100%', marginTop: "40px" }}>
+                    <Box>
+                        <Tabs sx={{width: "100%"}} textColor='inherit' value={value} onChange={handleChange} aria-label="basic tabs example">
+                            <Tab className="me-[5px] md:me-[17px] lg:me-[21px]" label={
+                                <Box>
+                                    <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[] ">
                                         <Image
                                             alt="icon"
                                             src={"/asset/images/cc-classic.png"}
-                                            width={100}
-                                            height={100}
+                                            fill
                                         />
-                                        lable
                                     </Box>
-                                } />
-                                <Tab label={
-                                    <Box className="">
+                                    <Typography sx={{marginTop: "13px"}} variant="body1">تپسی کلاسیک</Typography>
+                                </Box>
+                            } />
+                            <Tab className="mx-[10px] md:mx-[17px] lg:me-[21px]" label={
+                                <Box>
+                                    <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[] ">
                                         <Image
                                             alt="icon"
                                             src={"/asset/images/cc-tel.png"}
-                                            width={100}
-                                            height={100}
+                                            fill
                                         />
-                                        lable
                                     </Box>
-                                } />
-                                <Tab label={
-                                    <Box className="">
+                                    <Typography sx={{marginTop: "13px"}} variant="body1">تپسی تلفتی</Typography>
+                                </Box>
+                            } />
+                            <Tab className="mx-[10px] md:mx-[17px] lg:me-[21px]" label={
+                                <Box>
+                                    <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[] ">
                                         <Image
                                             alt="icon"
                                             src={"/asset/images/cc-line.png"}
-                                            width={100}
-                                            height={100}
+                                            fill
                                         />
-                                        lable
                                     </Box>
-                                } />
-                                <Tab label={
-                                    <Box className="">
+                                    <Typography sx={{marginTop: "13px"}} variant="body1">تپسی لاین</Typography>
+                                </Box>
+                            } />
+                            <Tab className="mx-[10px] md:mx-[17px] lg:me-[21px]" label={
+                                <Box>
+                                    <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[] ">
                                         <Image
                                             alt="icon"
                                             src={"/asset/images/cc-motopeyk.png"}
-                                            width={100}
-                                            height={100}
+                                            fill
                                         />
-                                        lable
                                     </Box>
-                                } />
-                                <Tab label={
-                                    <Box className="">
+                                    <Typography sx={{marginTop: "13px"}} variant="body1">موتوپیک</Typography>
+                                </Box>
+                            } />
+                            <Tab className="mx-[10px] md:mx-[17px] lg:me-[21px]" label={
+                                <Box>
+                                    <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[] ">
                                         <Image
                                             alt="icon"
                                             src={"/asset/images/cc-autopeyk.png"}
-                                            width={100}
-                                            height={100}
+                                            fill
                                         />
-                                        lable
                                     </Box>
-                                } />
-                                <Tab label={
-                                    <Box className="">
+                                    <Typography sx={{marginTop: "13px"}} variant="body1">اوتوپیک</Typography>
+                                </Box>
+                            } />
+                            <Tab className="mx-[10px] md:mx-[17px] lg:me-[21px]" label={
+                                <Box>
+                                    <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[] ">
                                         <Image
                                             alt="icon"
                                             src={"/asset/images/cc-plus.png"}
-                                            width={100}
-                                            height={100}
+                                            fill
                                         />
-                                        lable
                                     </Box>
-                                } />
-                                <Tab label={
-                                    <Box className="">
+                                    <Typography sx={{marginTop: "13px"}} variant="body1">تپسی پلاس</Typography>
+                                </Box>
+                            } />
+                            <Tab className="ms-[10px] md:ms-[17px] lg:ms-[21px]" label={
+                                <Box>
+                                    <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[] ">
                                         <Image
                                             alt="icon"
                                             src={"/asset/images/cc-hamyar.png"}
-                                            width={100}
-                                            height={100}
+                                            fill
                                         />
-                                        lable
                                     </Box>
-                                } />
-                            </Tabs>
+                                    <Typography sx={{marginTop: "13px"}} variant="body1">همیار</Typography>
+                                </Box>
+                            } />
+                        </Tabs>
 
-                        </Box>
+                    </Box>
                     <CustomTabPanel value={value} index={0}>
                         Item One
                     </CustomTabPanel>

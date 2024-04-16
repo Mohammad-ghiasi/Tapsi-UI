@@ -73,7 +73,7 @@ const Hero = () => {
             </Box>
             <Box className="w-[50%] hidden lg:block ">
                 k
-                <Box className="relative w-[60%] xl:w-[27%] h-[80%] mx-auto mt-40 shadow-2xl shadow-black">
+                <Box className="relative w-[60%] xl:w-[29%] h-[80%] mx-auto mt-40 shadow-manual ">
                     <Image
                         alt="phone"
                         src={'/asset/images/phone.png'} // Updated path
