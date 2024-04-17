@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
-import localFont from "next/font/local"
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Box, Container } from "@mui/material";
 
 
-const inter = localFont({ src: "../../public/asset/fonts/Rezvan/Rezvan.ttf" });
+import localFont from "next/font/local"
+const inter = localFont({ src: "../../public/asset/fonts/lalezar/Lalezar-Regular.ttf" });
 
 
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
 
     <html dir="rtl" lang="en">
-      <body className={inter.className}>
+      <body>
         <header>
           <Navbar />
         </header>

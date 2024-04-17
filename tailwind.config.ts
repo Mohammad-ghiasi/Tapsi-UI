@@ -8,13 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'lale': "./public/asset/fonts/lalezar/Lalezar-Regular.ttf"
+      },
       backgroundImage: {
         'hero-pattern': "url('../../public/asset/images/hero.png')",
         'tapsi': "url('../../public/asset/images/tapsi.png')"
       },
       colors: {
         'black-rgba': 'rgba(0, 0, 0, 0.40)',
+        "my-orange": "#ED6C02"
       },
+      boxShadow: {
+        'manual': '40px 50px 80px -20px rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   plugins: [],
