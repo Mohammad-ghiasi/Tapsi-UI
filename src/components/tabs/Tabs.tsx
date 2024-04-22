@@ -7,23 +7,12 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
 import { Button, Container, Divider, ThemeProvider, createTheme } from '@mui/material';
-import localFont from "next/font/local"
-const inter = localFont({ src: "../../../public/asset/fonts/lalezar/Lalezar-Regular.ttf" });
+import { theme } from "@/themes/muiTheme";
 interface TabPanelProps {
     children?: React.ReactNode;
     index: number;
     value: number;
 }
-
-const font = "../../public/asset/fonts/lalezar/Lalezar-Regular.ttf";
-const theme = (outerTheme: any) =>
-    createTheme({
-
-        typography: {
-            fontFamily: font, // Font family name without quotes
-        },
-
-    });
 
 function CustomTabPanel(props: TabPanelProps) {
     const { children, value, index, ...other } = props;
@@ -66,11 +55,13 @@ export default function TapsiTabs() {
         <>
             <ThemeProvider theme={theme}>
                 <Container>
-                    <Typography variant='h4'>سرویس های تپسی</Typography>
+                    <Box className="lg:px-9 lg:pb-7">
+                        <Typography className="" variant='h4'>سرویس های تپسی</Typography>
+                    </Box>
                     <Box sx={{ width: '100%', marginTop: "40px" }}>
                         <Box>
-                            <Tabs sx={{ width: "100%" }} textColor='inherit' value={value} onChange={handleChange} aria-label="basic tabs example">
-                                <Tab className="me-[5px] md:me-[17px] lg:me-[21px]" label={
+                            <Tabs className="ms-1m lg:mb-10" sx={{ width: "100%" }} textColor='inherit' value={value} onChange={handleChange} aria-label="basic tabs example">
+                                <Tab className="mx-[5px] md:me-[17px] lg:mx-[21px]" label={
                                     <Box>
                                         <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[50px] ">
                                             <Image
@@ -142,7 +133,7 @@ export default function TapsiTabs() {
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">تپسی پلاس</Typography>
                                     </Box>
                                 } />
-                                <Tab className="ms-[10px] md:ms-[17px] lg:ms-[21px]" label={
+                                <Tab className="ms-[10px] md:ms-[17px] lg:mx-[21px]" label={
                                     <Box>
                                         <Box className="relative w-[70px] h-[40px] md:w-[80px] md:h-[45px] lg:w-[100px] lg:h-[50px] ">
                                             <Image

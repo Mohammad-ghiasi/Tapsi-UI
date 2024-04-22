@@ -16,7 +16,8 @@ const config: Config = {
         'tapsi': "url('../../public/asset/images/tapsi.png')"
       },
       colors: {
-        'black-rgba': 'rgba(0, 0, 0, 0.40)',
+        'black-rgba': 'rgba(0, 0, 0, 0.50)',
+        'black-rgba-2': 'rgba(0, 0, 0, 0.20)',
         "my-orange": "#ED6C02"
       },
       boxShadow: {

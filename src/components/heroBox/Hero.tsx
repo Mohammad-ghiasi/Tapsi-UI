@@ -1,26 +1,18 @@
 "use client"
 import React from 'react'
-import { Box, Button, ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Box, Button, ThemeProvider, Typography } from "@mui/material";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import AppsIcon from '@mui/icons-material/Apps';
 import DirectionsCarFilledOutlinedIcon from '@mui/icons-material/DirectionsCarFilledOutlined';
 import SportsMotorsportsOutlinedIcon from '@mui/icons-material/SportsMotorsportsOutlined';
 import Image from "next/image";
-const font = "../../public/asset/fonts/lalezar/Lalezar-Regular.ttf";
-const theme = (outerTheme: any) =>
-    createTheme({
-
-        typography: {
-            fontFamily: font, // Font family name without quotes
-        },
-
-    });
+import { theme } from '@/themes/muiTheme';
 const Hero = () => {
     return (
         <ThemeProvider theme={theme}>
             <Box className="flex flex-row justify-center w-100 h-[600px] mb-5 lg:mb-36 md:h-[500px]  bg-hero-pattern bg-center bg-no-repeat bg-cover">
                 <Box className="w-[100%] md:max-md:w-[60%] xl:w-[50%]   flex justify-center ">
-                    <Box className=" px-9 text-white bg-black-rgba  lg:ms-24 my-auto py-6 w-[90%] rounded-3xl ">
+                    <Box className=" px-9 text-white bg-gradient-to-r from-black-rgba to-black-rgba-2  lg:ms-24 my-auto py-6 w-[90%] rounded-3xl ">
                         <Typography variant="h3">تپسی</Typography>
                         <Typography variant="body1" className="font-bold text-xl md:text-2xl mt-4 ">اپلیکیشن درخواست خودرو و پیک</Typography>
                         <Box className="w-[100%] flex justify-center flex-col items-center">
@@ -98,7 +90,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
-
-
-//   dana
+export default Hero;

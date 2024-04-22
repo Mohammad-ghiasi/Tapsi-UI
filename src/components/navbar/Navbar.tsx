@@ -1,32 +1,16 @@
 "use client"
 import React, { useState } from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Drawer, List, ListItem, ListItemText, Box, Container, Button, Divider, TableContainer } from '@mui/material';
+import { AppBar, Toolbar, IconButton,  Drawer, List, Box, Container, Button, Divider } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { createTheme, ThemeProvider, Theme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { prefixer } from 'stylis';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 import Link from 'next/link';
+import { theme } from '@/themes/muiTheme';
 
 
-const font = "../../../public/asset/fonts/lalezar/Lalezar-Regular.ttf";
-const theme = (outerTheme: Theme) =>
-    createTheme({
-        direction: 'rtl',
-        typography: {
-            fontFamily: font, // Font family name without quotes
-        },
-        breakpoints: {
-            values: {
-                xs: 0,
-                sm: 750, // adjust as needed
-                md: 960, // adjust as needed
-                lg: 1280, // adjust as needed
-                xl: 1920, // adjust as needed
-            },
-        },
-    });
 
 const cacheRtl = createCache({
     key: 'muirtl',
