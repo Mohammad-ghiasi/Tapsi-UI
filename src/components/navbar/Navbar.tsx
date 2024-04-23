@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { AppBar, Toolbar, IconButton,  Drawer, List, Box, Container, Button, Divider } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Drawer, List, Box, Container, Button, Divider } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ThemeProvider } from '@mui/material/styles';
 import rtlPlugin from 'stylis-plugin-rtl';
@@ -26,30 +26,32 @@ const Navbar = () => {
 
     const drawer = (
         <Box dir='rlt' className="mt-14">
-            <List className='flex flex-col'>
-                <Link href="/">
-                    <Button variant='text' color='inherit'> <span className="text-[18px] text-gray-900">ویدیو ها</span></Button>
-                </Link>
-                <Divider />
-                <Link href="/">
-                    <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">پشتیبانی</span></Button>
-                </Link>
-                <Divider />
-                <Link href="/">
-                    <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">امور سهام</span></Button>
-                </Link>
-                <Divider />
-                <Link href="/">
-                    <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">تپسی پک</span></Button>
-                </Link>
-                <Divider />
-                <Link href="/">
-                    <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">فرصت های شغلی</span></Button>
-                </Link>
-                <Divider />
-                <Link href="/">
-                    <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">وبلاگ</span></Button>
-                </Link>
+            <List className='flex flex-col space-y-3 ps-5'>
+                <Box className="mx-6">
+                    <Link href="/">
+                        <Button variant='text' color='inherit'> <span className="text-[18px] text-gray-900">ویدیو ها</span></Button>
+                    </Link>
+                    <Divider />
+                    <Link href="/">
+                        <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">پشتیبانی</span></Button>
+                    </Link>
+                    <Divider />
+                    <Link href="/">
+                        <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">امور سهام</span></Button>
+                    </Link>
+                    <Divider />
+                    <Link href="/">
+                        <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">تپسی پک</span></Button>
+                    </Link>
+                    <Divider />
+                    <Link href="/">
+                        <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">فرصت های شغلی</span></Button>
+                    </Link>
+                    <Divider />
+                    <Link href="/">
+                        <Button variant='text' color='inherit'><span className="text-[18px] text-gray-900">وبلاگ</span></Button>
+                    </Link>
+                </Box>
             </List>
         </Box>
     );
@@ -59,7 +61,7 @@ const Navbar = () => {
             <ThemeProvider theme={theme}>
                 <Container>
                     <Box dir="rtl" >
-                        <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, margin: "0", padding: "0", background: '#ffff' }}>
+                        <AppBar position="fixed" sx={{padding: "0px", zIndex: (theme) => theme.zIndex.drawer + 1, margin: 0, background: '#ffff' }}>
                             <Toolbar className="flex flex-row justify-between mx-2 lg:mx-16 sm:max-md:mx-6">
                                 <Box>
                                     <Link href="/">

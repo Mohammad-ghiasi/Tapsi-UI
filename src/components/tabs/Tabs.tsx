@@ -198,7 +198,7 @@ export default function TapsiTabs() {
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={3}>
                             <Box className="flex lg:flex-row lg:justify-between">
-                                <Box className="pe-36">
+                                <Box className="lg:pe-36">
                                     <Typography className="font-bold text-lg md:text-3xl mb-4">موتو پیک</Typography>
                                     <Typography className="text-md lg:text-xl">با استفاده از سرویس موتوپیک، بسته‌ها و مرسولاتتان با پیک موتور به مقصد ارسال می‌شوند. این سرویس مناسب زمانی است که می‌خواهید مرسوله سریع‌تر به مقصد برسد. در این سرویس، شما می‌توانید مسیر رسیدن مرسوله‌تان به مقصد را به صورت لحظه‌ای روی نقشه دنبال کنید.</Typography>
                                     <Button variant="contained" color="warning" size="large" className="font-bold text-xl py-2 px-4 mt-8">آشنایی با موتوپیک</Button>
