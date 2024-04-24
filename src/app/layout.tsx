@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
 
 
-      <html dir="rtl" lang="en">
+      <html dir="rtl" lang="fa">
         <body>
           <header>
             <Navbar />
