@@ -15,7 +15,7 @@ const Drivers = () => {
     <ThemeProvider theme={theme}>
       <Container className=''>
         <Box className="grid grid-cols-1 md:grid-cols-2 mb-6 md:mb-24 lg:mb-32">
-          <Box className="max-md:order-last text-gray-700">
+          <Box className="max-w-prose max-md:order-last text-gray-700">
             <Typography variant="h4" className='font-bold text-black' gutterBottom>
               مزایای تپسی برای رانندگان تاکسی اینترنتی
             </Typography>
