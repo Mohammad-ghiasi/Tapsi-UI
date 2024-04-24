@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-    font-family: 'Lalezar', cursive !important;
-} */
+.hover-content {
+    display: none;
+    /* Initially hide the content */
+}
+
+.hover-target:hover .hover-content {
+    display: block;
+    /* Show the content when hovering over the target element */
+}

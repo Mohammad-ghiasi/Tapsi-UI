@@ -13,7 +13,8 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-pattern': "url('../../public/asset/images/hero.png')",
-        'tapsi': "url('../../public/asset/images/tapsi.png')"
+        'tapsi': "url('../../public/asset/images/tapsi.png')",
+        'city': "url('../../public/asset/images/tehran2.jpg')"
       },
       colors: {
         'black-rgba': 'rgba(0, 0, 0, 0.50)',

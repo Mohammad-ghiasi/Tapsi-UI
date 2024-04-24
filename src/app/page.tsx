@@ -1,4 +1,5 @@
 import Hero from "@/components/heroBox/Hero";
+import Info from "@/components/info/Info";
 import Main from "@/components/main/Main";
 import TapsiTabs from "@/components/tabs/Tabs";
 import { Box } from "@mui/material";
@@ -10,6 +11,7 @@ export default function Home() {
      <Hero />
      <TapsiTabs />
     <Main />
+    <Info />
     </Box>
   );
 

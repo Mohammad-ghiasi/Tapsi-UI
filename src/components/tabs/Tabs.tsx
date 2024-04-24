@@ -23,6 +23,7 @@ function CustomTabPanel(props: TabPanelProps) {
             hidden={value !== index}
             id={`simple-tabpanel-${index}`}
             aria-labelledby={`simple-tab-${index}`}
+            className="mx-8"
             {...other}
         >
             {value === index && (

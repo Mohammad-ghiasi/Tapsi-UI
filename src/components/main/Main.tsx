@@ -22,7 +22,7 @@ const Main = () => {
                         </Link><br />
                         <Button className="mt-7 px-5 py-3 " variant='contained' color="warning" size='large'><span className="text-[16px] font-bold">ورود و ثبت نام پنل سازمانی</span></Button>
                     </Box>
-                    <Box className="relative w-auto h-[300px] md:h-[350px] ms-12 lg:ms-24" >
+                    <Box className="relative w-auto h-[260px] md:h-[350px] ms-12 lg:ms-24" >
 
                         <Image
                             className='z-10'
@@ -33,7 +33,7 @@ const Main = () => {
                     </Box>
                 </Box>
                 <Box className="grid grid-cols-1 gap-y-14 md:grid-cols-2">
-                    <Box className="relative w-auto h-[300px] md:h-[350px] p-7 lg:me-24" >
+                    <Box className="relative w-auto h-[260px] md:h-[350px] p-7 lg:me-24" >
                         <Image
                             className='z-10'
                             alt='macBook'
