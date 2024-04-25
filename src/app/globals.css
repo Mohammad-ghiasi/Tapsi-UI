@@ -11,3 +11,14 @@
     display: block;
     /* Show the content when hovering over the target element */
 }
+
+
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis (...) to indicate hidden text */
+    -webkit-line-clamp: 3; /* For webkit-based browsers like Chrome and Safari */
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 1.5; /* Adjust line height if needed */
+}
