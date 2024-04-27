@@ -29,6 +29,7 @@ const Main = () => {
                             alt='macBook'
                             src={'/asset/images/i-mac.webp'}
                             fill
+                            loading='lazy'
                         />
                     </Box>
                 </Box>
@@ -39,6 +40,7 @@ const Main = () => {
                             alt='macBook'
                             src={'/asset/images/macbook.webp'}
                             fill
+                            loading='lazy'
                         />
                     </Box>
                     <Box className="max-md:order-last max-w-prose">

@@ -1,3 +1,4 @@
+import Area from "@/components/area/Area";
 import Drivers from "@/components/drivers/Drivers";
 import Hero from "@/components/heroBox/Hero";
 import Info from "@/components/info/Info";
@@ -16,6 +17,7 @@ export default function Home() {
       <Info />
       <Drivers />
       <Weblogs />
+      <Area />
     </Box>
   );
 
