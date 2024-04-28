@@ -19,6 +19,8 @@ const config: Config = {
       colors: {
         'black-rgba': 'rgba(0, 0, 0, 0.50)',
         'black-rgba-2': 'rgba(0, 0, 0, 0.20)',
+        'area': '#e7e7e7',
+
         "my-orange": "#ED6C02"
       },
       boxShadow: {

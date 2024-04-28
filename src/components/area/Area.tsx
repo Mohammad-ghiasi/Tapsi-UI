@@ -10,7 +10,7 @@ const Area = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container>
-                <Box className="hidden lg:block mt-36 lg:mb-16">
+                <Box className="hidden lg:block mt-36 lg:mb-16 bg-gradient-to-l from-white  to-area rounded-2xl py-4">
                     <Typography variant='h4' className="font-bold mb-10">تپسی در ایران</Typography>
                     <Box className="grid grid-cols-8 gap-x-4 gap-y-3">
                         <Citys farsi={"تهران"} engish={"Tehran"} />

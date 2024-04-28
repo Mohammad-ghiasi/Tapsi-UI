@@ -91,8 +91,8 @@ const Drivers = () => {
               </li>
             </ul>
             <Box className="flex flex-col max-md:justify-center max-md:items-center max-md:space-y-5 md:flex-row mt-7 md:mt-12">
-              <Button variant='contained' color='primary' size="large" className='py-3 px-4 rounded-lg w-[50%] md:w-[40%] md:me-6'><span>ثبت نام راننده تاکسی آنلاین</span></Button>
-              <Button variant='contained' color='primary' size="large" className='py-3 px-6 rounded-lg w-[50%] md:w-[40%]'><span>دانلود برنامه تپسی راننده</span></Button>
+              <Button variant='contained' color='primary' size="large" className='py-3 px-4 rounded-lg w-[70%] md:w-[40%] md:me-6'><span>ثبت نام راننده تاکسی آنلاین</span></Button>
+              <Button variant='contained' color='primary' size="large" className='py-3 px-6 rounded-lg w-[70%] md:w-[40%]'><span>دانلود برنامه تپسی راننده</span></Button>
             </Box>
           </Box>
             <Box className="relative mb-7 h-[300px] w-[100%] md:w-[80%] md:ms-6 rounded-2xl overflow-hidden">

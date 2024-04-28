@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 
 
 import localFont from "next/font/local"
+import Footer from "@/components/footer/Footer";
 // const inter = localFont({ src: "../../public/asset/fonts/lalezar/Lalezar-Regular.ttf" });
 
 
@@ -33,7 +34,9 @@ export default function RootLayout({
           <main>
             {children}
           </main>
-
+          <footer>
+            <Footer />
+          </footer>
         </body>
       </html>
   );
