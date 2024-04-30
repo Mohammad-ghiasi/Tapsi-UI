@@ -12,7 +12,7 @@ const config: Config = {
         'lale': "./public/asset/fonts/lalezar/Lalezar-Regular.ttf"
       },
       backgroundImage: {
-        'hero-pattern': "url('../../public/asset/images/hero.png')",
+        'hero-pattern': "url('../../public/asset/images/hero.webp')",
         'tapsi': "url('../../public/asset/images/tapsi.png')",
         'city': "url('../../public/asset/images/tehran2.jpg')"
       },
