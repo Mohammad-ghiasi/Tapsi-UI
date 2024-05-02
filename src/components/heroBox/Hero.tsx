@@ -82,7 +82,7 @@ const Hero = () => {
                             src={'/asset/images/phone.png'} // Updated path
                             fill={true}
                         />
-                        jbjkj
+                       
                     </Box>
                 </Box>
             </Box>
