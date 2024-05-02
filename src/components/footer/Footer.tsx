@@ -25,6 +25,7 @@ const Footer = () => {
                                             alt="Tapsi"
                                             src={"/asset/images/tapsi-logo-white.svg"}
                                             fill
+                                            loading="lazy"
                                         />
                                     </Link>
                                 </Box>
@@ -80,6 +81,7 @@ const Footer = () => {
                                         alt='E-nemad'
                                         src={"/asset/images/logo.png"}
                                         fill
+                                        loading="lazy"
                                     />
                                 </Box>
                             </Box>
@@ -90,6 +92,7 @@ const Footer = () => {
                                         alt='E-nemad'
                                         src={"/asset/images/etehadiye.png"}
                                         fill
+                                        loading="lazy"
                                     />
                                 </Box>
                             </Box>
@@ -100,6 +103,7 @@ const Footer = () => {
                                         alt='E-nemad'
                                         src={"/asset/images/logo_2.png"}
                                         fill
+                                        loading="lazy"
                                     />
                                 </Box>
                             </Box>

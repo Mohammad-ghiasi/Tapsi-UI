@@ -69,6 +69,7 @@ export default function TapsiTabs() {
                                                 alt="icon"
                                                 src={"/asset/images/cc-classic.png"}
                                                 fill
+                                                loading="lazy"
                                             />
                                         </Box>
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">تپسی کلاسیک</Typography>
@@ -81,6 +82,7 @@ export default function TapsiTabs() {
                                                 alt="icon"
                                                 src={"/asset/images/cc-tel.png"}
                                                 fill
+                                                loading="lazy"
                                             />
                                         </Box>
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">تپسی تلفتی</Typography>
@@ -93,6 +95,7 @@ export default function TapsiTabs() {
                                                 alt="icon"
                                                 src={"/asset/images/cc-line.png"}
                                                 fill
+                                                loading="lazy"
                                             />
                                         </Box>
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">تپسی لاین</Typography>
@@ -105,6 +108,7 @@ export default function TapsiTabs() {
                                                 alt="icon"
                                                 src={"/asset/images/cc-motopeyk.png"}
                                                 fill
+                                                loading="lazy"
                                             />
                                         </Box>
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">موتوپیک</Typography>
@@ -117,6 +121,7 @@ export default function TapsiTabs() {
                                                 alt="icon"
                                                 src={"/asset/images/cc-autopeyk.png"}
                                                 fill
+                                                loading="lazy"
                                             />
                                         </Box>
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">اوتوپیک</Typography>
@@ -129,6 +134,7 @@ export default function TapsiTabs() {
                                                 alt="icon"
                                                 src={"/asset/images/cc-plus.png"}
                                                 fill
+                                                loading="lazy"
                                             />
                                         </Box>
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">تپسی پلاس</Typography>
@@ -141,6 +147,7 @@ export default function TapsiTabs() {
                                                 alt="icon"
                                                 src={"/asset/images/cc-hamyar.png"}
                                                 fill
+                                                loading="lazy"
                                             />
                                         </Box>
                                         <Typography sx={{ marginTop: "13px" }} variant="body1">همیار</Typography>
