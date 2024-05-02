@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tapsi-UI
+
+Welcome to Tapsi-UI, a modern and responsive UI framework designed to simplify the development of web applications. Tapsi-UI provides a collection of reusable components and styles that can be easily integrated into your projects, allowing you to create beautiful and functional user interfaces with minimal effort.
+
+## Features
+
+- **Responsive Design:** Tapsi-UI components are designed to adapt seamlessly to different screen sizes, ensuring that your application looks great on any device.
+- **Customizable:** Customize the look and feel of your application with Tapsi-UI's flexible theming system. Easily adjust colors, typography, and other design elements to match your brand or personal style.
+- **Accessible:** Tapsi-UI follows best practices for web accessibility, making it easy for all users, including those with disabilities, to navigate and interact with your application.
+- **Easy to Use:** Tapsi-UI's intuitive API and documentation make it easy to get started with building your application. Whether you're a seasoned developer or just getting started, you'll find Tapsi-UI easy to use and understand.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Tapsi-UI, simply follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Installation:** Install Tapsi-UI into your project using npm or yarn:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   npm install tapsi-ui
+   # or
+   yarn add tapsi-ui
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Import Styles:** Import Tapsi-UI styles into your project's main stylesheet:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```css
+   @import 'tapsi-ui/dist/tapsi-ui.css';
+   ```
 
-## Learn More
+3. **Start Using Components:** Start using Tapsi-UI components in your project. Refer to the documentation for a list of available components and how to use them.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Customize:** Customize the look and feel of your application by adjusting Tapsi-UI's theme variables. Refer to the theming documentation for more information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For detailed documentation on how to use Tapsi-UI components and customize your application, please refer to the [official documentation](https://tapsi-ui.com/docs).
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We welcome contributions from the community! If you encounter any bugs, have feature requests, or would like to contribute code, please open an issue or submit a pull request on GitHub.
